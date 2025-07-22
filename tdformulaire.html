@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="form.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <main>
+        <h1>Inscription</h1>
+        <form action="https://adok.org/form/form.php" enctype="multipart/form-data">
+            <div class="item">
+                <label>Sexe</label>
+                <div>
+                    <input type="radio" name="Sexe" value="m">masculine
+                    <input type="radio" name="Sexe" value="f">feminin
+                </div>
+            </div>
+            <div class="item">
+                <label>Nom</label>
+                <input type="text" name="nom">
+            </div>
+            <div class="item">
+                <label>prenom</label> <input type="text" name="prenom">
+            </div>
+            <div class="item">
+                <label>Naissance</label> <input type="date" value="datedenaissance">
+            </div>
+            <div class="item">
+                <label for="">Nationalite</label>
+                <select name="nationalite" id="">
+                    <optgroup label="eu">
+                        <option value="fr">francaise</option>
+                        <option value="bel">belge</option>
+                        <option value="es">espgnol</option>
+                        <option value="it">italianne</option>
+                    </optgroup>
+                    <optgroup label="hors eu">
+                        <option value="af">AFGHANISTAN</option>
+                        <option value="za">AFRIQUE DU SUD</option>
+                        <option value="al">ALBANIE</option>
+                        <option value="aq">ANTARCTIQUE</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="item">
+                <label>email</label><input type="email" name="email">
+            </div>
+            <div class="item">
+                <label>Mot de passe</label><input type="password" name="motdepasse" size="8" maxlength="8">
+            </div>
+            <div class="item">
+                <label>Adresse</label><input type="text" name="Adresse" size="30" maxlength="20">
+            </div>
+            <div class="item">
+                <label>Code postal</label><input type="number" name="codepostal">
+            </div>
+            <div class="item">
+                <label>Ville</label> <input type="text" name="ville" size="5" maxlength="5">
+            </div>
+            <div class="item">
+                <label>Photo</label><input type="file" name="photo" accept="image/jpeg">
+            </div>
+            <div class="item">
+                <label><input type="submit" value="valider"></label>
+            </div>
+
+
+
+        </form>
+    </main>
+</body>
+
+</html>
